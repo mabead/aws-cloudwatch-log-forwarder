@@ -4,4 +4,4 @@ import cdk = require('@aws-cdk/core');
 import { ExampleStack } from '../lib/example-stack';
 
 const app = new cdk.App();
-new ExampleStack(app, 'ExampleStack');
+new ExampleStack(app, 'AwsCloudWatchLogsForwarderExampleStack', { env: {region:'us-east-1'} });
