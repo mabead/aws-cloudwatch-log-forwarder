@@ -10,7 +10,7 @@ export class CloudWatchLogForwarder extends cdk.Construct {
   constructor(scope: cdk.Construct, id: string, props?: CloudWatchLogForwarderProps) {
     super(scope, id);
 
-    new kinesis.Stream(this, 'Stream', props == undefined ? undefined : props.kinesisProps);
+    new kinesis.Stream(this, 'Stream', props?.kinesisProps);
   }
 }
 
