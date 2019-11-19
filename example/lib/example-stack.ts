@@ -12,12 +12,12 @@ export class CloudWatchLogForwarder extends core.Construct {
   constructor(scope: core.Construct, id: string, props?: CloudWatchLogForwarderProps) {
     super(scope, id);
 
-    new kinesis.Stream(this, 'Stream', props?.kinesisProps);
-    
+    // new kinesis.Stream(this, 'Stream', props?.kinesisProps);
+
     new lambda.Function(this, 'SetExpiry', {
       runtime: lambda.Runtime.NODEJS_10_X,
       handler: 'index.handler',
-      code: lambda.Code.fromAsset(path.join(__dirname, 'resources', 'SetExpiry.js'))});      
+      code: lambda.Code.fromAsset(path.join(__dirname, '..', 'resources', 'SetExpiry'))});      
   } 
 }
 
