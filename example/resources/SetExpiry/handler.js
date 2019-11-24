@@ -19,6 +19,6 @@ module.exports.handler = async (event, context) => {
   const logGroupName = event.detail.requestParameters.logGroupName
   console.log(`log group: ${logGroupName}`)
 
-  await setExpiry(logGroupName)
+  // await setExpiry(logGroupName)
   console.log(`updated [${logGroupName}]'s retention policy to ${retentionDays} days`)
 }
