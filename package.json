@@ -23,9 +23,11 @@
     "@aws-cdk/core": "^1.16.3"
   },
   "dependencies": {
-    "@aws-cdk/aws-sns": "^1.16.3",
-    "@aws-cdk/aws-sns-subscriptions": "^1.16.3",
-    "@aws-cdk/aws-sqs": "^1.16.3",
+    "@aws-cdk/aws-events": "^1.16.3",
+    "@aws-cdk/aws-events-targets": "^1.16.3",
+    "@aws-cdk/aws-iam": "^1.16.3",
+    "@aws-cdk/aws-kinesis": "^1.16.3",
+    "@aws-cdk/aws-lambda": "^1.16.3",
     "@aws-cdk/core": "^1.16.3"
   }
 }
