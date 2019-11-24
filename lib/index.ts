@@ -5,7 +5,7 @@ import path = require('path');
 import events = require('@aws-cdk/aws-events');
 import targets = require('@aws-cdk/aws-events-targets');
 
-export interface CloudwatchLogForwarderProps {
+export interface CloudWatchLogForwarderProps {
   /**
    * The properties of the kinesis stream. This can be used, for example, if you want to customize the encryption scheme of the Kinesis stream.
    * TODO MAX: do we really want to expose this?
