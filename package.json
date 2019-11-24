@@ -1,8 +1,10 @@
 {
   "name": "@mabead/aws-cloudwatch-log-forwarder",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "repository": "github:mabead/aws-cloudwatch-log-forwarder",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
+  "license": "ISC",
   "scripts": {
     "prepublishOnly": "tsc",
     "build": "tsc",
